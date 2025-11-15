@@ -1,1 +1,116 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Layout</title>
+    <style>
+        /* Global page styling */
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;   /* specified font */
+            background-color: #777777;                  /* mid‑grey background */
+            color: #222;
+        }
+
+        /* Header */
+        header {
+            background: #ffffff;          /* white header */
+            padding: 1rem;
+            display: flex;
+            justify-content: flex-end;    /* button on the right */
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+        header button {
+            background: #000000;          /* black button */
+            color: #ffffff;               /* white text */
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        /* Main content area */
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Top rectangular element (visible in the initial viewport) */
+        .hero {
+            background: #f0f0f0;
+            height: 250px;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            border-radius: 8px;
+        }
+
+        /* Placeholder paragraph */
+        .placeholder {
+            line-height: 1.6;
+        }
+
+        /* Footer with two circular buttons */
+        footer {
+            position: fixed;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 1rem;
+        }
+        footer button {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: none;
+            background: #007bff;
+            color: #fff;
+            font-size: 0.8rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <button>Black Button</button>
+</header>
+
+<main>
+    <!-- Rectangular element that appears at the top of the scroll area -->
+    <section class="hero">
+        Top rectangular element
+    </section>
+
+    <!-- Scrollable placeholder text -->
+    <section class="placeholder">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod, nisl a
+        fermentum faucibus, odio mauris aliquet risus, non placerat sapien erat nec urna.
+        Curabitur non ligula vitae orci commodo venenatis. Integer ac libero quis mi mollis
+        tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+        ac turpis egestas. Sed euismod, justo eget tempor gravida, massa quam bibendum velit,
+        non lobortis lacus elit id odio. Vestibulum ante ipsum primis in faucibus orci luctus
+        et ultrices posuere cubilia curae; Mauris vel augue vitae nunc volutpat tincidunt.
+        Praesent sit amet ligula a arcu interdum pulvinar. Aliquam erat volutpat.</p>
+
+        <p>Phasellus euismod, lectus a dictum feugiat, nisi ex aliquet odio, a tincidunt
+        tortor magna non justo. Donec nec arcu nec arcu ultricies laoreet. Nam at sem
+        consequat, elementum odio nec, congue elit. Etiam a nulla euismod, auctor mauris
+        non, aliquet lacus. Cras lacinia, lorem at pellentesque accumsan, dui neque
+        facilisis purus, sed convallis orci metus a eros. Suspendisse potenti. Nulla
+        facilisi. Integer nec ligula non ex semper suscipit.</p>
+    </section>
+</main>
+
+<footer>
+    <button>Contact1</button>
+    <button>Contact2</button>
+</footer>
+
+</body>
+</html>
